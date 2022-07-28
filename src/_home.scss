@@ -1,0 +1,67 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0.5rem;
+  background: #001d3d;
+  color: #ffffff;
+}
+
+.home-words {
+  text-align: center;
+  padding: 15px;
+}
+
+.home-words h3 {
+  color: aqua;
+  text-shadow: rgb(4, 128, 145) 1px 3.2px;
+}
+
+.home-words button {
+  background: none;
+  color: white;
+  border: 1px solid aqua;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 9px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.home-words button:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.home-image {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.button {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+.button button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.blue {
+  background: blue;
+}
+
+.orange {
+  background: orange;
+}

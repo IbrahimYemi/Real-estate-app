@@ -1,0 +1,45 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #001d3d;
+  --secondary: #003566;
+  --white: #ffffff;
+  --black: #000814;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5px 5px;
+  position: relative;
+  height: 50px;
+  background: var(--secondary);
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header nav {
+  position: absolute;
+  top: 50px;
+  display: flex;
+}
+
+header nav ul {
+  margin: 15px;
+  list-style-type: none;
+  font-weight: 200;
+}
+
+header nav ul li {
+  padding: 5px 10px;
+} */

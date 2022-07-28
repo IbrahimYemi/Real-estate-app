@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #001d3d;
+  color: #ffffff;
+}
+
+.sect {
+  margin: 10px;
+}
+
+.sect h4 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.sect ul li {
+  list-style-type: none;
+  font-style: italic;
+  padding: 2.5px;
+  cursor: pointer;
+}
+
+.sect ul li:hover {
+  color: darkgrey;
+}

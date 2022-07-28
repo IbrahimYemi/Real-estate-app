@@ -1,0 +1,32 @@
+.examples {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #001d3d;
+  color: #ffffff;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products > * {
+  flex: 1 1 33%;
+}
+
+.products img {
+  max-width: 220px;
+  height: 180px;
+}

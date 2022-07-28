@@ -1,0 +1,64 @@
+.contact {
+  background: #001d3d;
+  color: #ffffff;
+}
+.contact h3 {
+  text-align: center;
+  font-size: 28px;
+  margin: 7px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+form .names {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+form .names > * {
+  width: 100%;
+  background: #ebf0ed;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  color: #0c0000;
+  outline: none;
+}
+
+form .names > *::placeholder {
+  color: #494d4b;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin: 10px 0;
+  background: #ebf0ed;
+}
+
+.submit {
+  background: gray;
+  border: 1px solid #fefefe;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #ebf0ed;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: #494d4b;
+}
