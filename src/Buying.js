@@ -34,7 +34,7 @@ export default function Buying() {
     if (confirmMe) {
       DisplayAlert();
     } else {
-      alert('Okay, waiting for paystack!');
+      alert('Okay, this person rejected me ');
     }
   }
   return (
