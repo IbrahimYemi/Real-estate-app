@@ -15,23 +15,25 @@ export default function Buying() {
     emptyCart,
   } = useCart();
 
+  const DisplayAlert = () => {
+    var newLine = '\r\n';
+    var msg = 'CONTACT DETAILS';
+    msg += 'Telephone on:.';
+    msg += newLine;
+    msg += '+234 814 353 2294';
+    msg += newLine;
+    msg += 'Email me @:';
+    msg += newLine;
+    msg += 'ibrahimsharafadeen95@gmail.com';
+    alert(msg);
+  };
+
   function handleProceed() {
     const confirmMe = confirm('Okay! Now hire me?');
-    function DisplayAlert() {
-      var newLine = '\r\n';
-      var msg = 'Telephone on:.';
-      msg += newLine;
-      msg += '+234 814 353 2294';
-      msg += newLine;
-      msg += 'Email me @:';
-      msg += newLine;
-      msg += 'ibrahimsharafadeen95@gmail.com';
-      alert(msg);
-      if (confirmMe) {
-        DisplayAlert();
-      } else {
-        alert('Okay, waiting for paystack!');
-      }
+    if (confirmMe) {
+      DisplayAlert();
+    } else {
+      alert('Okay, waiting for paystack!');
     }
   }
   return (
