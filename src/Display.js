@@ -19,7 +19,13 @@ export default function Display({
   emptyCart,
 }) {
   const allData = Data.map((item) => {
-    const [liked, setLiked] = useState(false);
+    const [liked, setLiked] = React.useState(
+      JSON.parse(localStorage.getItem('lyk')) || false
+    );
+
+    React.useEffect(() => {
+      localStorage.setItem('lyk', JSON.stringify(liked));
+    }, [liked]);
 
     function handleClick(item) {
       setLiked(true);
