@@ -18,6 +18,7 @@ export default function Buying() {
   const DisplayAlert = () => {
     var newLine = '\r\n';
     var msg = 'CONTACT DETAILS';
+    msg += newLine;
     msg += 'Telephone on:.';
     msg += newLine;
     msg += '+234 814 353 2294';
