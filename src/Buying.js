@@ -14,6 +14,26 @@ export default function Buying() {
     removeItem,
     emptyCart,
   } = useCart();
+
+  function handleProceed() {
+    const confirmMe = confirm('Okay! Now hire me?');
+    function DisplayAlert() {
+      var newLine = '\r\n';
+      var msg = 'Telephone on:.';
+      msg += newLine;
+      msg += '+234 814 353 2294';
+      msg += newLine;
+      msg += 'Email me @:';
+      msg += newLine;
+      msg += 'ibrahimsharafadeen95@gmail.com';
+      alert(msg);
+      if (confirmMe) {
+        DisplayAlert();
+      } else {
+        alert('Okay, waiting for paystack!');
+      }
+    }
+  }
   return (
     !isEmpty && (
       <section className="py-4 container">
@@ -82,7 +102,9 @@ export default function Buying() {
             <button className="btn btn-danger m-2" onClick={() => emptyCart()}>
               clear out
             </button>
-            <button className="btn btn-success m-2">proceed</button>
+            <button className="btn btn-success m-2" onClick={handleProceed}>
+              proceed
+            </button>
           </div>
         </div>
       </section>

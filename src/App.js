@@ -22,9 +22,15 @@ export default function App() {
     emptyCart,
   } = useCart();
   const [color, setColor] = React.useState(false);
-  const [favorite, setFavorite] = React.useState(0);
+  const [favorite, setFavorite] = React.useState(
+    JSON.parse(localStorage.getItem('notes')) || []
+  );
 
   const [activeStar, setActiveStar] = React.useState({});
+
+  React.useEffect(() => {
+    localStorage.setItem('notes', JSON.stringify(favorite));
+  }, [favorite]);
 
   const handleFav = (item) => {
     setColor(true);
