@@ -40,12 +40,12 @@ export default function Display({
     return (
       <div key={item.id} className="house">
         <span className="minus">
-          <button onClick={() => handleSlick(item)}>
+          <button disable={!favorite}  onClick={() => handleSlick(item)}>
             <i className="fa-solid fa-minus"></i>
           </button>
         </span>
         <span className="plus">
-          <button onClick={() => handleClick(item)}>
+          <button disabled={favorite}  onClick={() => handleClick(item)}>
             <i className="fa-solid fa-plus"></i>
           </button>
         </span>
