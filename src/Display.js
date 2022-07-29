@@ -17,6 +17,7 @@ export default function Display({
   updateItemQuantity,
   removeItem,
   emptyCart,
+  favorite
 }) {
   const allData = Data.map((item) => {
     const [liked, setLiked] = React.useState(
@@ -40,12 +41,12 @@ export default function Display({
     return (
       <div key={item.id} className="house">
         <span className="minus">
-          <button disable={!favorite}  onClick={() => handleSlick(item)}>
+          <button disable={!color}  onClick={() => handleSlick(item)}>
             <i className="fa-solid fa-minus"></i>
           </button>
         </span>
         <span className="plus">
-          <button disabled={favorite}  onClick={() => handleClick(item)}>
+          <button disabled={color}  onClick={() => handleClick(item)}>
             <i className="fa-solid fa-plus"></i>
           </button>
         </span>

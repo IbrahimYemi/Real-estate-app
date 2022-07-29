@@ -68,7 +68,7 @@ export default function App() {
           updateItemQuantity={updateItemQuantity}
           removeItem={removeItem}
           emptyCart={emptyCart}
-          favorite={favourite}
+          favorite={favorite}
         />
       </CartProvider>
       <Contact />
