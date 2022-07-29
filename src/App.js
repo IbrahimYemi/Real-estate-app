@@ -21,7 +21,6 @@ export default function App() {
     removeItem,
     emptyCart,
   } = useCart();
-  const [color, setColor] = React.useState(false);
   const [favorite, setFavorite] = React.useState(
     JSON.parse(localStorage.getItem('fav')) || []
   );
@@ -33,7 +32,6 @@ export default function App() {
   const [activeStar, setActiveStar] = React.useState({});
 
   const handleFav = (item) => {
-    setColor(true);
     setFavorite((prev) => {
       favorite: prev;
       const counting = favorite + 1;
@@ -44,7 +42,6 @@ export default function App() {
   };
 
   function handleFavd(events) {
-    setColor(false);
     setFavorite((prev) => prev - 1);
   }
 
@@ -59,7 +56,6 @@ export default function App() {
           arr={arr}
           click={handleFav}
           double={handleFavd}
-          color={color}
           isEmpty={isEmpty}
           totalUniqueItems={totalUniqueItems}
           items={items}

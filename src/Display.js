@@ -17,7 +17,7 @@ export default function Display({
   updateItemQuantity,
   removeItem,
   emptyCart,
-  favorite
+  favorite,
 }) {
   const allData = Data.map((item) => {
     const [liked, setLiked] = React.useState(
@@ -28,12 +28,16 @@ export default function Display({
       localStorage.setItem('lyk', JSON.stringify(liked));
     }, [liked]);
 
+    const [color, setColor] = React.useState(false);
+
     function handleClick(item) {
+      setColor(true);
       setLiked(true);
       click(item);
     }
 
     function handleSlick(item) {
+      setColor(false);
       setLiked(false);
       double(item);
     }
@@ -41,12 +45,12 @@ export default function Display({
     return (
       <div key={item.id} className="house">
         <span className="minus">
-          <button disable={!color}  onClick={() => handleSlick(item)}>
+          <button disabled={!color} onClick={() => handleSlick(item)}>
             <i className="fa-solid fa-minus"></i>
           </button>
         </span>
         <span className="plus">
-          <button disabled={color}  onClick={() => handleClick(item)}>
+          <button disabled={color} onClick={() => handleClick(item)}>
             <i className="fa-solid fa-plus"></i>
           </button>
         </span>
